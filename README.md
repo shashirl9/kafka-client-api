@@ -1,9 +1,13 @@
 # kafka-client-api
 
 Producer API
+
 Consumer API
+
 Streams API
+
 Connect API
+
 AdminClient API
 
 Maven/Gradle dependency:
