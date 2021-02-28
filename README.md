@@ -1,24 +1,24 @@
 # kafka-client-api
 
-Producer API
+- Producer API
+- Consumer API
+- AdminClient API (In-progress)
+- Streams API (In-progress)
+- Connect API (In-progress
 
-Consumer API
+**Maven/Gradle dependency:**
 
-Streams API
+**_MAVEN_**:
 
-Connect API
-
-AdminClient API
-
-Maven/Gradle dependency:
-
-MAVEN:
-<!-- For Producer and Consumer API -->
+`
 <dependency>
     <groupId>org.apache.kafka</groupId>
     <artifactId>kafka-clients</artifactId>
     <version>2.7.0</version>
 </dependency>
+`
 
-GRADLE:
-implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '2.7.0'
+
+**_GRADLE_**:
+
+`implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '2.7.0'`

@@ -5,9 +5,10 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>kafka-admin-api</module>
         <module>kafka-producer-api</module>
 		<module>kafka-consumer-api</module>
-	</modules>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -37,6 +38,10 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
         <dependency>
