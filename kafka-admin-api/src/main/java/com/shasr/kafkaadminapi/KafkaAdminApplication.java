@@ -67,15 +67,6 @@ public class KafkaAdminApplication implements CommandLineRunner {
         adminClient.createTopics(Collections.singleton(createTopic));
     }
 
-    private void deleteTopic(AdminClient adminClient) throws Exception {
-
-        Collection<TopicListing> topicList = adminClient.listTopics().listings().get();
-        log.info("------------- Delete topic ---------------");
-        if (topicList.contains(TOPIC_NAME)) {
-            adminClient.deleteTopics(Collections.singleton(TOPIC_NAME));
-        }
-    }
-
     private void listTopics(AdminClient adminClient) throws Exception {
 
         log.info("------------- Topics List ---------------");
@@ -84,6 +75,15 @@ public class KafkaAdminApplication implements CommandLineRunner {
             log.info("Topic Name : {} ", topic.name());
             log.info("Is-internal Topic : {} ", topic.isInternal());
         });
+    }
+
+    private void deleteTopic(AdminClient adminClient) throws Exception {
+
+        Collection<TopicListing> topicList = adminClient.listTopics().listings().get();
+        log.info("------------- Delete topic ---------------");
+        if (topicList.contains(TOPIC_NAME)) {
+            adminClient.deleteTopics(Collections.singleton(TOPIC_NAME));
+        }
     }
 
     private void fetchClusterId(AdminClient adminClient) throws Exception {
