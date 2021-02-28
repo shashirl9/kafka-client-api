@@ -1,7 +1,9 @@
 # kafka-client-api
 
+https://medium.com/nerd-for-tech/how-client-application-interact-with-kafka-cluster-made-easy-with-java-apis-58f29229d992
+
 - AdminClient API
-  -- Create New Topic
+  --Create New Topic
   -- Delete Topic
   -- Describe Topic to fetch Partition, ISR, Leader and Replica details
   -- List Topics
