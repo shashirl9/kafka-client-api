@@ -1,8 +1,12 @@
 # kafka-client-api
 
+- AdminClient API
+  -- Create New Topic
+  -- Delete Topic
+  -- Describe Topic to fetch Partition, ISR, Leader and Replica details
+  -- List Topics
 - Producer API
 - Consumer API
-- AdminClient API (In-progress)
 - Streams API (In-progress)
 - Connect API (In-progress
 
